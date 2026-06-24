@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginlogoDetailsDelegate_4" translatesAutoresizingMaskIntoConstraints="NO" id="2rE-7g-OyN">
+                                <rect key="frame" x="144" y="292" width="102" height="178"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="102" id="Ko1-8R-C8f"/>
+                                    <constraint firstAttribute="height" constant="178" id="yrn-xy-Dqa"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="动画说明：机器人先出来，hello后出来" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdf-xm-TU8">
+                                <rect key="frame" x="29.666666666666657" y="560" width="330.66666666666674" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="openMade" translatesAutoresizingMaskIntoConstraints="NO" id="MDz-ni-L1q">
+                                <rect key="frame" x="87" y="272" width="72" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="9Kd-bv-Vlg"/>
+                                    <constraint firstAttribute="width" constant="72" id="n1T-x3-zQm"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MDz-ni-L1q" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="46h-md-IzG"/>
+                            <constraint firstItem="cdf-xm-TU8" firstAttribute="top" secondItem="2rE-7g-OyN" secondAttribute="bottom" constant="90" id="8LU-wP-8MY"/>
+                            <constraint firstItem="2rE-7g-OyN" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="REa-lj-DvN"/>
+                            <constraint firstItem="cdf-xm-TU8" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="U6h-oz-z3Y"/>
+                            <constraint firstItem="2rE-7g-OyN" firstAttribute="leading" secondItem="MDz-ni-L1q" secondAttribute="trailing" constant="-15" id="aU2-d1-cth"/>
+                            <constraint firstItem="2rE-7g-OyN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="245" id="cZd-8w-foL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.307692307692307" y="374.64454976303318"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="openMade" width="72" height="51"/>
+        <image name="beginlogoDetailsDelegate_4" width="102" height="178"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

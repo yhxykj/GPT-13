@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CNIHomeController" customModule="Bulter" customModuleProvider="target">
+            <connections>
+                <outlet property="collectionView" destination="lCq-HC-wG0" id="kVt-Tc-YVk"/>
+                <outlet property="newButton" destination="zfd-Hr-iMU" id="5DP-LR-gyJ"/>
+                <outlet property="titleView" destination="yqY-3g-XrG" id="dcZ-CU-QHf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5KT-OC-HkM">
+                    <rect key="frame" x="0.0" y="47" width="390" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qth-KF-K7c">
+                            <rect key="frame" x="16" y="0.0" width="110" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="wbm-DH-3fH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="AI assistant">
+                                <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bp-4z-ggb">
+                            <rect key="frame" x="330" y="0.0" width="50" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="46M-Vj-YAM"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="alifastEveant"/>
+                            <connections>
+                                <action selector="vipCenter:" destination="-1" eventType="touchUpInside" id="Vgc-xq-yfu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3bp-4z-ggb" firstAttribute="top" secondItem="5KT-OC-HkM" secondAttribute="top" id="BuH-oq-GRG"/>
+                        <constraint firstAttribute="bottom" secondItem="qth-KF-K7c" secondAttribute="bottom" id="Cha-N8-YOP"/>
+                        <constraint firstAttribute="bottom" secondItem="3bp-4z-ggb" secondAttribute="bottom" id="XyN-mv-7EY"/>
+                        <constraint firstAttribute="height" constant="44" id="gue-4H-s2e"/>
+                        <constraint firstAttribute="trailing" secondItem="3bp-4z-ggb" secondAttribute="trailing" constant="10" id="qkE-3I-cFI"/>
+                        <constraint firstItem="qth-KF-K7c" firstAttribute="top" secondItem="5KT-OC-HkM" secondAttribute="top" id="wSZ-8W-XZY"/>
+                        <constraint firstItem="qth-KF-K7c" firstAttribute="leading" secondItem="5KT-OC-HkM" secondAttribute="leading" constant="16" id="xka-Yl-Bk3"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yqY-3g-XrG">
+                    <rect key="frame" x="0.0" y="91" width="390" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="liT-zu-jqU"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lCq-HC-wG0">
+                    <rect key="frame" x="0.0" y="141" width="390" height="669"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="6gV-fn-W1A">
+                        <size key="itemSize" width="128" height="128"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zfd-Hr-iMU">
+                    <rect key="frame" x="308" y="727" width="66" height="66"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="ringReusableAyment"/>
+                    <connections>
+                        <action selector="newAdd:" destination="-1" eventType="touchUpInside" id="YEt-zP-IeM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zfd-Hr-iMU" secondAttribute="trailing" constant="16" id="3F6-aw-oE6"/>
+                <constraint firstItem="lCq-HC-wG0" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="B3l-m1-5pd"/>
+                <constraint firstItem="yqY-3g-XrG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BSP-id-TpH"/>
+                <constraint firstAttribute="trailing" secondItem="5KT-OC-HkM" secondAttribute="trailing" id="FBM-tE-qde"/>
+                <constraint firstItem="5KT-OC-HkM" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="GuA-4O-fFV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="lCq-HC-wG0" secondAttribute="bottom" id="L71-bS-Igr"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="zfd-Hr-iMU" secondAttribute="bottom" constant="17" id="Tl0-ZG-MXt"/>
+                <constraint firstItem="lCq-HC-wG0" firstAttribute="top" secondItem="yqY-3g-XrG" secondAttribute="bottom" id="du7-8I-3Tx"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="yqY-3g-XrG" secondAttribute="trailing" id="l9S-n5-BOC"/>
+                <constraint firstAttribute="trailing" secondItem="lCq-HC-wG0" secondAttribute="trailing" id="pcV-QM-S0c"/>
+                <constraint firstItem="yqY-3g-XrG" firstAttribute="top" secondItem="5KT-OC-HkM" secondAttribute="bottom" id="qvh-ja-Sbz"/>
+                <constraint firstItem="5KT-OC-HkM" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="t5T-vl-VfK"/>
+            </constraints>
+            <point key="canvasLocation" x="104.61538461538461" y="-14.218009478672984"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="alifastEveant" width="22" height="22"/>
+        <image name="ringReusableAyment" width="66" height="66"/>
+    </resources>
+</document>
